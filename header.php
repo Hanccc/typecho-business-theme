@@ -21,6 +21,21 @@
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/ripples.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/roboto.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/customs.css'); ?>">
+        <style>
+			.billboard{
+				background:#b8d9fa url("<?php $this->options->billboard() ?>") center center repeat-x;
+				background-size:cover;
+				padding:340px 0 100px;
+				box-shadow:0 2px 8px rgba(0,0,0,.25),0 2px 8px rgba(0,0,0,.12)
+			}
+			.demo1 .wrapper{
+				margin-top: 20px;
+  				position: relative;
+  				background: url("<?php $this->options->navpng() ?>") center no-repeat;
+  				height: 420px;
+
+			}
+        </style>
 	</head>
 
 	<header>

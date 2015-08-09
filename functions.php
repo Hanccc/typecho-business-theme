@@ -4,11 +4,19 @@ function themeConfig($form) {
     $slogan = new Typecho_Widget_Helper_Form_Element_Text('slogan', NULL, NULL, _t('首页图片标语文字'), _t('在这里文字，用于在首页中图片的文字显示'));
     $form->addInput($slogan);
 
+    $billboard = new Typecho_Widget_Helper_Form_Element_Text('billboard', NULL, NULL, _t('首页图片路径'), _t('首页大图片的路径'));
+    $form->addInput($billboard);
+
+    $navpng = new Typecho_Widget_Helper_Form_Element_Text('navpng', NULL, NULL, _t('导航图片路径'), _t('首页导航图片的路径'));
+    $form->addInput($navpng);
+
     $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('siteIcon', NULL, NULL, _t('标题栏和书签栏Icon'), _t('在这里填入一个图片URL地址, 作为标题栏和书签栏Icon, 默认不显示'));
     $form->addInput($siteIcon);
 
     $miibeian = new Typecho_Widget_Helper_Form_Element_Text('miibeian', NULL, _t('粤ICP备14072384号-2'), _t('备案号'), _t('在这里填入天朝备案号，不显示则留空'));
     $form->addInput($miibeian);
+
+    // $banner = new Typecho_Widget_Helper_Form_Element_File('banner', )
 
     $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', array(
         'ShowSearch' => _t('显示搜索框'),
@@ -35,7 +43,7 @@ function timer_start() {
     return true;
 }
 timer_start();
- 
+
 function timer_stop( $display = 0, $precision = 3 ) {
     global $timestart, $timeend;
     $mtime = explode( ' ', microtime() );
