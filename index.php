@@ -69,7 +69,7 @@ $this->need('header.php');
 			    <div class="wrapper"></div>
 			</div>
 			<div class="demo2">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-1">
 					<div class="wrapper">
 						<div class="title">
 							<div>
