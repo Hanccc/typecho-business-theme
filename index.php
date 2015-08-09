@@ -65,9 +65,30 @@ $this->need('header.php');
 			    	</div>
 			    </div>
 			</div>
-			<div class="demo3">
-				<div class="col-md-3"></div>
-				<div class="col-md-3"></div>
+			<div class="demo_h4">
+			    <div class="wrapper"></div>
+			</div>
+			<div class="demo2">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="wrapper">
+						<div class="title">
+							<div>
+								<h2>动态</h2>
+								<span>&nbsp;&nbsp;News</span>
+							</div>
+							<a href="/news">更多▶</a>
+						</div>
+						<div class="new_list">
+							<p class="clearf"><a href="">标题</a><span>2015-07-09</span></p>
+							<?php while($this->next()): ?>
+								<p class="clearf">
+									<a href="<?php $this->author->permalink(); ?>"><?php $this->title() ?></a>
+									<span><?php $this->date('F j, Y'); ?></span>
+								</p>
+							<?php endwhile; ?>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 

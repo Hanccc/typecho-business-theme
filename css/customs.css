@@ -45,3 +45,85 @@ body{
 	top: 230px;
 	left: 740px;
 }
+.demo2{
+	margin-top: 60px;
+	  height: 300px;
+}
+.demo2 .wrapper{
+	width: 605px;
+	float: left;
+	margin-right: 50px;
+}
+
+.demo2 .title{
+	border-bottom: 1px solid #eaeaea;
+	height: 35px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.demo2 .title div{
+	border-bottom: 1px solid #609cff;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.demo2 .title div h2{
+	font-size: 18px;
+	margin-top: 0px;
+	  color: #000000;
+	  font-weight: 100;
+}
+.demo2 .title div span{
+	font-size: 12px;
+	  color: #999;
+	  position: relative;
+	  top: 4px;
+}
+.demo2 .title div *{
+	float: left;
+	line-height: 35px;
+}
+* {
+	outline: none;
+}
+.demo2 .title a{
+	float: right;
+	line-height: 35px;
+	font-size: 12px;
+	color: #999;
+}
+a{
+	text-decoration: none;
+}
+.demo_h4 .wrapper{
+	background: url(../img/line.png) center no-repeat;
+	height: 10px;
+}
+.clearf{
+	zoom: 1;
+}
+.demo2 .wrapper .new_list a{
+	font-size: 14px;
+	color: #666666;
+	line-height: 30px;
+	float: left;
+	max-width: 280px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
+}
+.demo2 .wrapper .new_list span{
+	font-size: 12px;
+	color: #bbb;
+	line-height: 30px;
+	float: right;
+}
+.clearf:after{
+	display: block;
+	  clear: both;
+	  content: "";
+	  visibility: hidden;
+	  height: 0;
+}
