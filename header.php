@@ -25,7 +25,19 @@
 			.billboard{
 				background:#b8d9fa url("<?php $this->options->billboard() ?>") center center repeat-x;
 				background-size:cover;
-				padding:340px 0 100px;
+				padding:240px 0 100px;
+				box-shadow:0 2px 8px rgba(0,0,0,.25),0 2px 8px rgba(0,0,0,.12)
+			}
+			.pagepng{
+				background:#b8d9fa url("<?php $this->options->siteUrl(); ?><?php echo 'usr/uploads/'.$this->_archiveSlug.".png"?>") center center repeat-x;
+				background-size:cover;
+				padding:140px 0 100px;
+				box-shadow:0 2px 8px rgba(0,0,0,.25),0 2px 8px rgba(0,0,0,.12)
+			}
+			#dy{
+				background:#b8d9fa url("<?php $this->options->dynamicpng() ?>") center center repeat-x;
+				background-size:cover;
+				padding:140px 0 100px;
 				box-shadow:0 2px 8px rgba(0,0,0,.25),0 2px 8px rgba(0,0,0,.12)
 			}
 			.demo1 .wrapper{

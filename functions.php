@@ -10,6 +10,21 @@ function themeConfig($form) {
     $navpng = new Typecho_Widget_Helper_Form_Element_Text('navpng', NULL, NULL, _t('导航图片路径'), _t('首页导航图片的路径'));
     $form->addInput($navpng);
 
+    $dynamicpng = new Typecho_Widget_Helper_Form_Element_Text('dynamicpng', NULL, NULL, _t('动态banner图片路径'), _t('动态banner图片路径'));
+    $form->addInput($dynamicpng);
+
+    // $advertisepng = new Typecho_Widget_Helper_Form_Element_Text('advertisepng', NULL, NULL, _t('广告主banner图片路径'), _t('广告主banner图片路径'));
+    // $form->addInput($advertisepng);
+
+    // $devpng = new Typecho_Widget_Helper_Form_Element_Text('devpng', NULL, NULL, _t('开发者banner图片路径'), _t('开发者banner图片路径'));
+    // $form->addInput($devpng);
+
+    // $webpng = new Typecho_Widget_Helper_Form_Element_Text('webpng', NULL, NULL, _t('网站主banner图片路径'), _t('网站主banner图片路径'));
+    // $form->addInput($webpng);
+
+    // $aboutpng = new Typecho_Widget_Helper_Form_Element_Text('aboutpng', NULL, NULL, _t('关于banner图片路径'), _t('关于banner图片路径'));
+    // $form->addInput($aboutpng);
+
     $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('siteIcon', NULL, NULL, _t('标题栏和书签栏Icon'), _t('在这里填入一个图片URL地址, 作为标题栏和书签栏Icon, 默认不显示'));
     $form->addInput($siteIcon);
 

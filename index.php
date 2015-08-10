@@ -16,7 +16,6 @@ $this->need('header.php');
 		<div class="row">
 			<div class="col-md-7">
 				<div class="intro animate fadeIn">
-					<h1><?php $this->options->slogan() ?></h1>
 					<p class="lead"></p>
 				</div>
 			</div>

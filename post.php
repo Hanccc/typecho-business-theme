@@ -17,8 +17,6 @@
                 </div>
             </div>
             <p class="tags">标签：<?php $this->tags(' , ', true, ''); ?></p>
-            <?php $this->need('comments.php'); ?>
         </div>
 
-    <?php $this->need('sidebar.php'); ?>
     <?php $this->need('footer.php'); ?>
